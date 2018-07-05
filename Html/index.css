@@ -1,0 +1,10 @@
+html {
+    background-color: #737777;
+  }
+
+input{
+  display:block;
+  margin-bottom: 3%;
+  margin-top:.5%;
+  text-align: center;
+}
