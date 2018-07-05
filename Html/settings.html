@@ -5,14 +5,27 @@
     <body>
         <header>
         </header>
-            Alarm Start Time:<input type="text" name="startTime">
-            Volume: 
-            <div class="volume">
-                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-            </div>
-            Value:
-            <div class="renamingAlarm">
-                <input type="text"id= "alertmName">
+            <h1>
+                Settings
+            </h1>
+            <div class="settingsContent">    
+                
+                Alarm Start Time:
+                <div id="startTime">
+                    <input type="text" name="startTime">
+                </div>
+                Volume
+                <div id="volumeSlider">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+                Value:
+                <div id="renamingAlarmInput">
+                    <input type="text"id= "alertmName">
+                </div>
+                
+                <div id="setAlarmBtn">
+                    <button type="button"> Set Alarm</button>
+                </div>
             </div>
         <footer>
         </footer>
