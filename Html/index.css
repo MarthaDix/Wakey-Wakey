@@ -25,7 +25,7 @@ input{
 
 h1{
   text-align:center;
-  font-size:5em;
+  font-size:4em;
 }
 body{
   font-size: 14px;
@@ -34,8 +34,10 @@ body{
     display:flex;
     flex-direction:column;
     text-align:center;
-    margin-bottom:5%;
+    margin-bottom:2%;
     margin-top: 2%;
+    justify-content: flex-start;
+  
 }
 * {
   box-sizing: border-box;
@@ -94,5 +96,16 @@ footer {
 nav, article {
       width: 100%;
       height: auto;
+}
+.buttonItem {
+  margin-bottom: 2%;
+  background-color: #0a3882;
+  border: none;
+  color: white;
+  padding: 13px;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 12px;
 }
 
