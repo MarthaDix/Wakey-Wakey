@@ -1,8 +1,10 @@
 <!doctype html>
-<link rel="stylesheet" href="index.css" type="text/css">
 <html>
     <title> Settings </title>
-    <body>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet" href="time.css" type="text/css">
+<body>
         <header>
         </header>
             <h1>
@@ -10,15 +12,15 @@
             </h1>
             <div class="settingsContent">    
                 
-                Alarm Start Time:
+                <h3>Alarm Start Time:</h3>
                 <div id="startTime">
-                    <input type="text" name="startTime">
+                    <input type="text" name="timepicker" class="timepicker"/>
                 </div>
-                Volume
+                <h3>Volume</h3>
                 <div id="volumeSlider">
                     <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                 </div>
-                Value:
+                <h3>Alarm Name:</h3>
                 <div id="renamingAlarmInput">
                     <input type="text"id= "alertmName">
                 </div>
@@ -27,8 +29,18 @@
                     <button type="button"> Set Alarm</button>
                 </div>
             </div>
+ 
         <footer>
         </footer>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
+        <script src="time.js"></script>
+        
+        <script>$('.timepicker').wickedpicker();</script>
+            
     </body>
 
 </html>

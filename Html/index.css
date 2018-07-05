@@ -39,6 +39,7 @@ body{
     justify-content: flex-start;
   
 }
+
 * {
   box-sizing: border-box;
 }
@@ -108,4 +109,5 @@ nav, article {
   font-size: 30px;
   border-radius: 12px;
 }
+
 
