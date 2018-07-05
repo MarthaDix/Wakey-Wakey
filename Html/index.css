@@ -1,13 +1,12 @@
 html {
-    background-color: #737777;
+    background-color: #113e75;
   }
 
 input{
-  display:block;
   margin-bottom: 3%;
   margin-top:.5%;
-  text-align: center;
 }
+
 .nagButtons{
   background-color: #105ad1;
   border: none;
@@ -25,3 +24,20 @@ input{
   justify-content:space-evenly
   
 }
+
+h1{
+  text-align:center;
+  font-size:5em;
+  background-color: #19753e;
+}
+body{
+  background-color: #371f8e
+}
+.settingsContent{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    margin-bottom:5%;
+    margin-top: 2%;
+}
+
