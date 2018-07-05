@@ -8,3 +8,20 @@ input{
   margin-top:.5%;
   text-align: center;
 }
+.nagButtons{
+  background-color: #105ad1;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  border-radius: 12px;
+}
+.ButtonNagBox{
+  display:flex;
+  flex-grow: 1;
+  justify-content:space-evenly
+  
+}
