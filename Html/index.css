@@ -74,13 +74,6 @@ nav ul {
 nav li{
   padding-left: 10px;
 }
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px;
-}
 
 section:after {
   content: "";
@@ -110,5 +103,23 @@ nav, article {
   font-size: 30px;
   border-radius: 12px;
 }
-
-
+.alarmList{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  margin-bottom:2%;
+  margin-top: 2%;
+  justify-content: flex-start;
+}
+.sampleMath {
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  margin-bottom:2%;
+  margin-top: 2%;
+  justify-content: flex-start;
+}
+.answer{
+  border: 2px solid red;
+  border-radius: 4px;
+}
