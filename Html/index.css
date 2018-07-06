@@ -123,3 +123,37 @@ nav, article {
   border: 2px solid red;
   border-radius: 4px;
 }
+.flexBox1{
+  display:flex;
+}
+.flexBox2{
+  display:flex;
+}
+#happyFingers{
+  display:flex;
+  width:auto;
+  height:25%;
+}
+#ram{
+  display:flex;
+  width:auto;
+  height:25%;
+}
+#bee{
+  display:flex;
+  width:auto;
+  height:25%;
+}
+#airBMB{
+  display:flex;
+  width:auto;
+  height:25%;
+}
+#soundStoreBtn{
+  text-align:center;
+}
+.flexVert{
+  display: flex;
+  flex-direction: column;
+}
+
