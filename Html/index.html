@@ -19,11 +19,13 @@
             
                 <nav>
                   <ul>
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="setAlarm.html">Set Alarm</a></li>
-                      <li><a href="settings.html">Settings</a></li>
-                      <li><a href="sounds.html">Sounds</a></li>
-                      <li><a href="sample.html">Sample</a></li>
+
+                      <li><a href="index.html" onCLick="window.location.href= 'index.html'">Home</a></li>
+                      <li><a href="setAlarm.html" onCLick="window.location.href= 'setAlarm.html'">Set Alarm</a></li>
+                      <li><a href="settings.html" onCLick="window.location.href= 'setting.html'">Settings</a></li>
+                      <li><a href="sounds.html" onCLick="window.location.href= 'sounds.html'">Sounds</a></li>
+                      <li><a href="sample.html" onCLick="window.location.href= 'sample.html'">Sample</a><li>
+
                   </ul>
                 </nav>
   
@@ -36,6 +38,13 @@
                               <p>WAKEY WAKEY! is an app designed to wake you up. The app allows you to choose your alarm, volume/sound that will keep going off every minute until you open your phone solve a math problem. The app also contains a "Tunes" feature with custom made alarm tones. The app is entirely free to use.</p>
                           </div>
                           <div>
+
+                            <h4>Alarm List:</h4>
+                          </div>
+                          <div>
+                              <button type="button" class="buttonItem" onCLick="window.location.href= 'setAlarm.html'">Add an Alarm</button>
+                          </div>
+
                               <div class="dropdown">
                                   <button onclick="myFunction()" class="dropbtn">Alarms</button>
                                     <div id="myDropdown" class="dropdown-content">
@@ -45,6 +54,7 @@
                                     </div>
                                 </div>
                                   
+
                           </div>
                             <div id="alarm1">
                               <p>
@@ -70,6 +80,10 @@
                                   Volume: 88
                                 </p>
                             </div>
+
+         </div>
+                
+
                     <footer>
                       <p>Copyright Wakey Wakey! LLC</p>
                     </footer>
