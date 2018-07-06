@@ -30,15 +30,15 @@
                                 </div>
                                 <div>
                                         <h3> 32 + 21 = </h3>
-                                        <input type="text" name="Alarm Name" class="answer">
+                                        <input type="text" id="problem1"name="Alarm Name" class="answer" onCLick="answerCheck()">
                                 </div>
                                 <div>
                                          <h3> 12 + 59 = </h3>
-                                         <input type="text" name="Alarm Name" class="answer">
+                                         <input type="text" id="problem2"name="Alarm Name" class="answer" onCLick="answerCheck()">
                                  </div>
                                  <div>
                                         <h3> 65 + 25 = </h3>
-                                        <input type="text" name="Alarm Name" class="answer">
+                                        <input type="text" id="problem3"name="Alarm Name" class="answer"onCLick="answerCheck()">
                                 </div>
                                 <div id="setAlarmBtn">
                                          <button class="buttonItem"type="button" onCLick="window.location.href= 'setAlarm.html'"> Return</button>
@@ -47,6 +47,33 @@
                         <div>
                         
                         </div>
+                        <script>
+                               
+                                function answerCheck(){
+                                        console.log(document.getElementById("problem1").value)
+                                        var choice1 = document.getElementById("problem1").value
+                                        var choice2 = document.getElementById("problem2").value
+                                        var choice3 = document.getElementById("problem3").value
+                                        console.log("it went through")
+                                        if (choice1=== "53"){
+                                                document.getElementById("problem1").style.backgroundColor = "#4CF76B";
+                                        }else{
+                                                document.getElementById("problem1").style.backgroundColor = "red";    
+                                        }
+                                        if (choice2=== "71"){
+                                                document.getElementById("problem2").style.backgroundColor = "#4CF76B";
+                                        }else{
+                                                document.getElementById("problem2").style.backgroundColor = "red";    
+                                        }
+                                        if (choice3=== "90"){
+                                         
+                                                document.getElementById("problem3").style.backgroundColor = "#4CF76B";
+                                        }else{
+                                                document.getElementById("problem3").style.backgroundColor = "red";    
+                                        }
+                                        
+                                }
+                        </script>
                         <footer>
                                 <p>Copyright Wakey Wakey! LLC</p>
                               </footer>

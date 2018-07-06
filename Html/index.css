@@ -4,7 +4,10 @@ input{
   margin-bottom: 3%;
   margin-top:.5%;
 }
-
+.answer{
+  border: 2px solid red;
+  border-radius: 4px;
+}
 .nagButtons{
   background-color: #105ad1;
   border: none;
@@ -25,7 +28,7 @@ input{
 
 h1{
   text-align:center;
-  font-size:3em;
+  font-size:2.3em;
 }
 body{
   font-size: 14px;
@@ -62,8 +65,11 @@ header {
   font-size: 30px;
   color: white;
 }
-
+#ourLogo{
+  float:right;
+}
 nav {
+  display:none;
   width: 30%;
   height: 300px;
   background: #ccc;
@@ -186,7 +192,6 @@ nav, article {
   position: relative;
   display: inline-block;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -204,19 +209,18 @@ nav, article {
   display: block;
 }
 #alarm1{
-  text-align:center;
+  
   font-size: 30px;
   font-family: "Times New Roman"; 
   display:none;
 }
 #alarm2{
-  text-align:center;
+ 
   font-size: 30px;
   font-family: "Times New Roman"; 
   display:none;
 }
 #alarm3{
-  text-align:center;
   font-size: 30px;
   font-family: "Times New Roman"; 
   display:none;
