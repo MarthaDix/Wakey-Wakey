@@ -36,14 +36,51 @@
                               <p>WAKEY WAKEY! is an app designed to wake you up. The app allows you to choose your alarm, volume/sound that will keep going off every minute until you open your phone solve a math problem. The app also contains a "Tunes" feature with custom made alarm tones. The app is entirely free to use.</p>
                           </div>
                           <div>
-                            <h4>Alarm List:</h4>
-                          </div>
+                              <div class="dropdown">
+                                  <button onclick="myFunction()" class="dropbtn">Alarms</button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                      <a href="#home" onCLick="alarm1()">Alarm 1</a>
+                                      <a href="#about"onCLick="alarm2()">Alarm 2</a>
+                                      <a href="#contact"onCLick="alarm3()">Alarm 3</a>
+                                    </div>
+                                  </div>
+                                  
                         </div>
                 
                     <footer>
                       <p>Copyright Wakey Wakey! LLC</p>
                     </footer>
-                    
+                    <script>
+                        /* When the user clicks on the button, 
+                        toggle between hiding and showing the dropdown content */
+                        function myFunction() {
+                            document.getElementById("myDropdown").classList.toggle("show");
+                        }
+                        
+                        // Close the dropdown if the user clicks outside of it
+                        window.onclick = function(event) {
+                          if (!event.target.matches('.dropbtn')) {
+                        
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                              var openDropdown = dropdowns[i];
+                              if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                              }
+                            }
+                          }
+                        }
+                        function alarm1(){
+                          console.log("IT WORKS");
+                        }
+                        function alarm2(){
+                          console.log("IT WORKS");
+                        }
+                        function alarm3(){
+                          console.log("IT WORKS");
+                        }
+                        </script>
                     </body>
                     </html>
                     <link rel="stylesheet" href="index.css" type="text/css">
