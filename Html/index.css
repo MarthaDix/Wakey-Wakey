@@ -37,7 +37,14 @@ body{
     margin-bottom:2%;
     margin-top: 2%;
     justify-content: flex-start;
-  
+}
+sampleMath {
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  margin-bottom:2%;
+  margin-top: 2%;
+  justify-content: flex-start;
 }
 
 * {
@@ -200,3 +207,4 @@ nav, article {
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
+
