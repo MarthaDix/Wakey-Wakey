@@ -20,7 +20,7 @@ input{
   display:flex;
   flex-grow: 1;
   justify-content:space-evenly;
-  flex-direction: row
+  flex-direction: row;
   
 }
 
@@ -58,21 +58,36 @@ header {
 }
 
 nav {
-  float: left;
   width: 30%;
   height: 300px;
   background: #ccc;
-  padding: 20px;
+  background-color:pink;
+  outline: 3px solid red;
+  padding-left: 0px;
+  padding-right:0px;
 }
 
 nav ul {
   list-style-type: none;
-  padding: 0;
+  padding: 0px;
   display:flex;
 }
 
 nav li{
   padding-left: 10px;
+  background-color: yellow;
+  width:100%;
+  outline: 3px solid red;
+  height:40px;
+ text-align: center;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px;
 }
 
 section:after {
@@ -102,26 +117,6 @@ nav, article {
   display: inline-block;
   font-size: 30px;
   border-radius: 12px;
-}
-.alarmList{
-  display:flex;
-  flex-direction:column;
-  text-align:center;
-  margin-bottom:2%;
-  margin-top: 2%;
-  justify-content: flex-start;
-}
-.sampleMath {
-  display:flex;
-  flex-direction:column;
-  text-align:center;
-  margin-bottom:2%;
-  margin-top: 2%;
-  justify-content: flex-start;
-}
-.answer{
-  border: 2px solid red;
-  border-radius: 4px;
 }
 .flexBox1{
   display:flex;
@@ -156,4 +151,3 @@ nav, article {
   display: flex;
   flex-direction: column;
 }
-
