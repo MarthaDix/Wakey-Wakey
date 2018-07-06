@@ -43,10 +43,33 @@
                                       <a href="#about"onCLick="alarm2()">Alarm 2</a>
                                       <a href="#contact"onCLick="alarm3()">Alarm 3</a>
                                     </div>
-                                  </div>
+                                </div>
                                   
-                        </div>
-                
+                          </div>
+                            <div id="alarm1">
+                              <p>
+                                Name: Alarm 1 <br>
+                                Start Time: 12:00 P.M<br>
+                                Sound: Dont go breaking my acheybreakedyachey<3 <br>
+                                Volume: 67
+                              </p>
+                            </div>
+                            <div id="alarm2">
+                                <p>
+                                  Name: Alarm 2 <br>
+                                  Start Time: 6:00 A.M<br>
+                                  Sound: .-- .- .-.. -- .- .-. - / -.-- --- -.. . .-.. / -... --- -.--<br>
+                                  Volume: 100
+                                </p>
+                            </div>
+                            <div id="alarm3">
+                                <p>
+                                  Name: Alarm 3 <br>
+                                  Start Time: 9:00 A.M<br>
+                                  Sound: Banging Kahoot Music<br>
+                                  Volume: 88
+                                </p>
+                            </div>
                     <footer>
                       <p>Copyright Wakey Wakey! LLC</p>
                     </footer>
@@ -73,12 +96,21 @@
                         }
                         function alarm1(){
                           console.log("IT WORKS");
+                          document.getElementById("alarm1").style.display = "block";
+                          document.getElementById("alarm2").style.display = "none";
+                          document.getElementById("alarm3").style.display = "none";
                         }
                         function alarm2(){
                           console.log("IT WORKS");
+                          document.getElementById("alarm1").style.display = "none";
+                          document.getElementById("alarm2").style.display = "block";
+                          document.getElementById("alarm3").style.display = "none";
                         }
                         function alarm3(){
                           console.log("IT WORKS");
+                          document.getElementById("alarm1").style.display = "none";
+                          document.getElementById("alarm2").style.display = "none";
+                          document.getElementById("alarm3").style.display = "block";
                         }
                         </script>
                     </body>

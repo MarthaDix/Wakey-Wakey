@@ -185,7 +185,24 @@ nav, article {
   text-decoration: none;
   display: block;
 }
-
+#alarm1{
+  text-align:center;
+  font-size: 30px;
+  font-family: "Times New Roman"; 
+  display:none;
+}
+#alarm2{
+  text-align:center;
+  font-size: 30px;
+  font-family: "Times New Roman"; 
+  display:none;
+}
+#alarm3{
+  text-align:center;
+  font-size: 30px;
+  font-family: "Times New Roman"; 
+  display:none;
+}
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
