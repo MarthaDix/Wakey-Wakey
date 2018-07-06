@@ -19,7 +19,7 @@ input{
 .ButtonNagBox{
   display:flex;
   justify-content:space-evenly;
-  flex-direction: row
+  flex-direction: row;
   
 }
 
@@ -57,21 +57,36 @@ header {
 }
 
 nav {
-  float: left;
   width: 30%;
   height: 300px;
   background: #ccc;
-  padding: 20px;
+  background-color:pink;
+  outline: 3px solid red;
+  padding-left: 0px;
+  padding-right:0px;
 }
 
 nav ul {
   list-style-type: none;
-  padding: 0;
+  padding: 0px;
   display:flex;
 }
 
 nav li{
   padding-left: 10px;
+  background-color: yellow;
+  width:100%;
+  outline: 3px solid red;
+  height:40px;
+ text-align: center;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px;
 }
 
 section:after {
@@ -101,26 +116,6 @@ nav, article {
   display: inline-block;
   font-size: 30px;
   border-radius: 12px;
-}
-.alarmList{
-  display:flex;
-  flex-direction:column;
-  text-align:center;
-  margin-bottom:2%;
-  margin-top: 2%;
-  justify-content: flex-start;
-}
-.sampleMath {
-  display:flex;
-  flex-direction:column;
-  text-align:center;
-  margin-bottom:2%;
-  margin-top: 2%;
-  justify-content: flex-start;
-}
-.answer{
-  border: 2px solid red;
-  border-radius: 4px;
 }
 .flexBox1{
   display:flex;
@@ -167,5 +162,41 @@ nav, article {
   border-radius: 12px;
 }
 
-  
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
 
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
