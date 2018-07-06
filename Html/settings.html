@@ -11,11 +11,11 @@
       
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="setAlarm.html">Set Alarm</a></li>
-            <li><a href="settings.html">Settings</a></li>
-            <li><a href="sounds.html">Sounds</a></li>
-            <li><a href="sample.html">Sample</a></li>
+            <li><a href="index.html" onCLick="window.location.href= 'index.html'">Home</a></li>
+            <li><a href="setAlarm.html" onCLick="window.location.href= 'setAlarm.html'">Set Alarm</a></li>
+            <li><a href="settings.html" onCLick="window.location.href= 'setting.html'">Settings</a></li>
+            <li><a href="sounds.html" onCLick="window.location.href= 'sounds.html'">Sounds</a></li>
+            <li><a href="sample.html" onCLick="window.location.href= 'sample.html'">Sample</a><li>
           </ul>
         </nav>
             <h1>
@@ -31,15 +31,18 @@
                 <div id="volumeSlider">
                     <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                 </div>
+                <div id="setAlarmBtn">
+                        <button class="buttonItem"type="button" onCLick="window.location.href= 'setAlarm.html'"> Return</button>
+                    </div>
             <!--</h3>Alarm Name:</h3>
                 <div id="renamingAlarmInput">
                     <input type="text"id= "alertmName">
                 </div>
             !-->
-                <div id="setAlarmBtn">
-                    <button class="buttonItem"type="button" onCLick="window.location.href= 'setAlarm.html'"> Return</button>
-                </div>
-            </div>
+        </div>
+    </body>
+           
+            
  
             <footer>
                     <p>Copyright Wakey Wakey! LLC</p>
