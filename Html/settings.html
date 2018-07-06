@@ -6,7 +6,17 @@
     <link rel="stylesheet" href="time.css" type="text/css">
 <body>
         <header>
-        </header>
+        <h2>WAKEY WAKEY!</h2>
+      </header>
+      
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="setAlarm.html">Set Alarm</a></li>
+            <li><a href="sounds.html">Sounds</a></li>
+            <li><a href="sample.html">Sample</a><li>
+          </ul>
+        </nav>
             <h1>
                 Settings
             </h1>
@@ -20,26 +30,31 @@
                 <div id="volumeSlider">
                     <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                 </div>
-                <h3>Alarm Name:</h3>
+            <!--</h3>Alarm Name:</h3>
                 <div id="renamingAlarmInput">
                     <input type="text"id= "alertmName">
                 </div>
-                
+            !-->
                 <div id="setAlarmBtn">
-                    <button type="button"> Set Alarm</button>
+                    <button class="buttonItem"type="button" onCLick="window.location.href= 'setAlarm.html'"> Return</button>
                 </div>
             </div>
  
-        <footer>
-        </footer>
+            <footer>
+                    <p>Footer</p>
+                  </footer>
         <script
             src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous">
         </script>
         <script src="time.js"></script>
-        
         <script>$('.timepicker').wickedpicker();</script>
+        <script>
+            function pageFunc () {
+                document.location.href = "localhost:3000/navigation.html";
+            }
+        </script>
             
     </body>
 
